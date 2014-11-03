@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>|<%= full_title(yield(:title)) %>  </title>
-  <%= stylesheet_link_tag    "application", media: => "all" %>
+  <title><%= full_title(yield(:title)) %>  </title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+	 
+	<%= render 'layouts/header' %>
+	<div class="container">
+		<%= yield %>
+		<hr>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vel, quod nihil. Autem at dolorum dicta, vel neque repudiandae quam numquam quidem facere? Eligendi maiores incidunt dolores dolorum mollitia accusamus.</p>
 
-<%= yield %>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, delectus consequatur quidem, veritatis quo ex quasi? Quae doloremque aperiam labore obcaecati quia provident voluptas. Quis ad voluptatem est, sit eveniet!
+		</p>
+		
+		<hr>
+		<%= render 'layouts/footer' %>
 
+	</div>
+
+	
 </body>
 </html>
  

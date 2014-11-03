@@ -1,8 +1,12 @@
+<div class="center hero-unit">
+	<h1>Welcome to the Sample App</h1>
 
+	<p>
+		The <a href="http://railstutorial.org">Ruby on rails</a> is a
+		project to make a book and screencasts to teach web development
+	</p>
 
-<h1>Sample App</h1>
+	<%= link_to "Sign up Today!", signup_path, class: "btn btn-success" %>
+</div>
 
-<p>
-	The <a href="http://railstutorial.org">Ruby on rails</a> is a
-	project to make a book and screenscars to teach web development
-</p>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://railstutorial.org/' %>
